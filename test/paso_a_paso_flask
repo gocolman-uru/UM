@@ -1,0 +1,6 @@
+- Link: https://j2logo.com/leccion-1-la-primera-aplicacion-flask/
+
+
+1 - source env/bin/activate  # Para activar el entorno virtual de la carpeta
+2 - export FLASK_APP="app.py" # Para asignarle la variable de entorno
+3 - flask run # Correr la app

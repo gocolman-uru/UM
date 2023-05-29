@@ -1,0 +1,157 @@
+/* Home CSS (Pagina Principal) */
+/* Grid Pagina INICIO */
+.grilla {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "hero hero"
+    "trabajo donde-trabajamos"
+    "footer footer";
+    font-family: 'Times New Roman', Times, serif;
+    background-color: papayawhip;
+  }
+  
+  .hero {
+  grid-area: hero;
+  }
+      
+  .trabajo {
+  grid-area:trabajo;
+  }
+  
+  .donde-trbajamos {
+  grid-area:donde-trabajamos;
+  }
+  
+  .header {
+  grid-area: header;
+  }
+  
+  .footer {
+  grid-area: footer;
+  }
+  
+  /* Header Section */
+  .header {
+    background-color: papayawhip;
+    padding: 25px;
+    position: sticky;
+    width: 100%;
+  }
+  
+  .header-title {
+      text-align: center;
+    }
+  
+  .header-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .header-nav ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+  /* Hero Section (Main Section) */
+  .hero {
+      height: 100vh;
+      background-image: url(../assets/img/manuela-agustina-profe.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      grid-area: hero;
+    }
+  
+    .hero-text {
+      text-align: center;
+      font-size: 2rem;
+    }
+  
+    .hero-reason {
+      font-size: 1.25rem;
+    }
+  
+  /* 1st Section (Trabajo) */
+  .trabajo {
+      grid-area:trabajo;
+    }
+  
+    .trabajo-title {
+      background-color: papayawhip;
+      text-align: center;
+      padding: 15px;
+    }
+  
+    .contenedor-trabajo {
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;   
+    }
+  
+    .explicacion-trabajo {
+      background-color: papayawhip;
+      border: black solid 2px;
+      border-radius: 20px;
+      width: 500px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content:space-between;
+      align-items:center;
+    }
+  
+    .trabajo-img {
+      width: 450px;
+      height: 200px;
+    }
+  
+  /* 2nd Section (Donde Trabajamos) */
+  .trabajamos-title {
+      background-color: papayawhip;
+      text-align: center;
+      padding: 15px;
+    }
+  
+  .trabajamos-contenedor {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .explicacion-trabajamos {
+    background-color: papayawhip;
+    border: black solid 2px;
+    border-radius: 20px;
+    width: 500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .taller-img {
+    width: 450px;
+    height: 200px;
+  }
+  
+  /* Footer Section */
+  .footer {
+    grid-area: footer;
+    background-color: papayawhip;
+  }
+  
+  .redes-title {
+    background-color: papayawhip;
+    text-align: center;
+    padding: 14px;
+  }

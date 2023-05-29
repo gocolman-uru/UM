@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Búsqueda de libros</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  </head>
+  <body>
+    <form method="GET" action="/search">
+      <input type="text" name="query" placeholder="Buscar libros...">
+      <button type="submit">Buscar</button>
+    </form>
+  </body>
+</html>

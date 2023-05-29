@@ -1,0 +1,53 @@
+/* Glosario con Guia CSS (3ra Pagina) */
+
+/* Header Section */
+.header {
+  background-color: papayawhip;
+  padding: 25px;
+  position: sticky;
+  width: 100%;
+}
+
+.header-title {
+  text-align: center;
+}
+
+.header-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  .header-nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 1,2 y 3ra Sections */
+.background-ubicacion {
+  padding: 30px;
+  height: 60%;
+  background-color: papayawhip;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: solid black 1px;
+}
+
+.text-ubicacion {
+  text-align: center;
+}
+
+/* Footer Section */
+.footer {
+  grid-area: footer;
+  background-color:white;
+}
+
+.redes-title {
+  background-color:white;
+  text-align: center;
+  padding: 14px;
+}

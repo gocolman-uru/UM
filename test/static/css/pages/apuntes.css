@@ -1,0 +1,72 @@
+/* Scanea tus apuntes CSS (2da Pagina) */
+
+/* Header Section */
+.header {
+  background-color:white;
+  padding: 25px;
+  position: sticky;
+  width: 100%;
+}
+
+.header-title {
+  text-align: center;
+}
+
+.header-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* CSS Utilizado en las 3 Sections */
+.materiales-back {
+  background-color: white;
+  border: solid black 1px;
+  padding: 5px;
+}
+
+.title-materiales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.lista-materiales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+}
+  
+.text-materiales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.file-loader{
+  display:flex ;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Footer Section */
+.footer {
+  grid-area: footer;
+  background-color:white;
+}
+
+.redes-title {
+  background-color:white;
+  text-align: center;
+  padding: 14px;
+}

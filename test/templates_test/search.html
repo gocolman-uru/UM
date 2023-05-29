@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buscar Libros - Buscador de Libros</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Inicio</a></li>
+            {% if current_user.is_authenticated %}
+            <li><a href="{{ url_for('logout') }}">Cerrar Sesión</a></li>
+            {% else %}
+            <li><a href="{{ url_for('login') }}">Iniciar Sesión</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>Buscar Libros</h1>
+        <form method="post" action="{{ url_for('search') }}">
+            <label for="query">Término de búsqueda:</label>
+            <input type="text" name="query" required>
+            <button type="submit">Buscar</button>
+        </form>
+        {% if results %}
+        <h2>Resultados de la búsqueda:</h2>
+        <ul>
+            {% for result in results %}
+            <li>{{ result.title }} - {{ result.author }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+</body>
+</html>

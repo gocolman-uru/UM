@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <meta name="keywords" content="Biblioteca, Digital, Libros, UM, Scanear, ApUMtes, Glosario, Temarios, Proyecto, Entrega,">
+    <meta name="description" content="Biblioteca digital de la UM en la cual uno puede acceder a una base de datos lleno de libros y encontrar aquel que le sirva para estudiar, hacer scaneo de apuntes para poder ver libros en especifico recomendados por una IA, ver materias pendientes que uno tiene y cuando serian las proximas instancias de evaluacion"> 
+    <title>ApUMtes</title>
+</head>
+
+<body>
+    <header class="header">
+        <div>
+            <h1 class="header-title">ApUMtes</h1>
+            <img src="" alt="logo taller" class="header-image">
+        </div>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="{{ url_for('static', filename='materias.html') }}" class="hover">Tus materias</a></li>
+                <li><a href="{{ url_for('static', filename='apuntes.html') }}" class="hover">Scanea tus apuntes</a></li>
+                <li><a href="{{ url_for('static', filename='glosario.html') }}" class="hover">Glosario con guia</a></li>
+            </ul>
+        </nav> 
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <article>
+                    <div class="topnav">
+                        <form method="GET" action="/search">
+                            <a class="active" href="#home">Busca</a>
+                            <a href="#about">tu</a>
+                            <a href="#contact">libro:</a>
+                            <input type="text" name="query" placeholder="...">
+                            <button type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </article>
+                <h2>¿Como Buscar?</h2>
+                <article class="hero-reason">
+                    <p>Se busca mediante un sistema de Labels (Los labels son palabras especificas que se encuentran en la base de datos que usamos para la Biblioteca digital) que permiten encontrar el contenido que uno esta buscando </p>
+                    <h2>Por ejemplo:</h2>
+                    <p>Si uno escribe Matematica, el searcher buscaria todos los libros disponibles que hablan sobre Matematica.
+                        Mientras mas labels especifcando el contenido que uno quiere encontrar, mas especifico seria el resultado que a uno le aparezca.
+                    </p>
+                    <h2>Ejemplos de LABELS</h2>
+                    <p>Autor, Editorial, Titulo, Materia, Temario especifico, Año de publicacion, Idioma</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="trabajo">
+            <h2 class="trabajo-title">Libros mas vistos:</h2>
+            <div class="contenedor-trabajo">
+                <article class="explicacion-trabajo">
+                    <li><p>Biologia para Dummies (Rene Fester Kratz y Donna Rae Siegfried)</p></li>
+                    <li><p>Genoma: La autobiografia de una especie en 23 capitulos (Matt Ridley)</p></li>
+                    <li><p>"Breve historia de la quimica" (Isaac Asimov)</p></li>
+                    <li><p>"La cuchara menguante" (Sam Kean)</p></li>
+                    <li><p>"Tratado elemental de la quimica" (Antoine Lavoisier)</p></li>
+                    <li><p>Fisica Basica (Jose Ricardo Luna Victoria Muñoz)</p></li>
+                    <li><p>Concepto y Magnitudes en Fisica (L.Laroze, N.Porras y G.Fuster)</p></li>
+                    <li><p>Psicologicamente Hablando (Adrian Triglia, Bertrand Regader y Jonathan Garcia-Allen)</p></li>
+                    <li><p>La sorprendente verdad sobre que nos motiva (Daniel Pink)</p></li>
+                    <li><p>Despertar del corazon: El arte de quererse bien (Sandra Garcia Sanchez-Beato)</p></li>
+                </article>
+            </div>
+        </section>
+
+        <section class="donde-trabajamos">
+            <h2 class="trabajamos-title">Categoria de Libros:</h2>
+            <div class="trabajamos-contenedor">
+                <article class="explicacion-trabajamos">
+                    <li><p>Matematica 1</p></li>
+                    <li><p>Matematica 2</p></li>
+                    <li><p>Matematica 3</p></li>
+                    <li><p>Algebra Lineal</p></li>
+                    <li><p>Introduccion a la Licenciatura</p></li>
+                    <li><p>Pensamiento Computacional</p></li>
+                    <li><p>Programacion 1</p></li>
+                    <li><p>Programacion 2</p></li>
+                    <li><p>Diseño de base de datos</p></li>
+                    <li><p>Diseño UX/UI</p></li>
+                    <li><p>Y muchos mas...</p></li>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Terminar Footer -->
+<footer class="footer">
+    <h3 class="redes-title">Nuestras Redes</h3>
+</footer>
+
+</body>
+
+</html>

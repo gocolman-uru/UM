@@ -1,0 +1,68 @@
+/* Materias CSS (3ra Pagina) */
+
+/* Header Section */
+.header {
+  background-color: papayawhip;
+  padding: 25px;
+  position: sticky;
+  width: 100%;
+}
+
+.header-title {
+  text-align: center;  
+}
+
+.header-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 1 y 2da Sections */
+.nosotras-explicacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: papayawhip;
+  padding: 10px;
+}
+
+.title-nosotras {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.text-nosotras {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+    
+.img-nosotras {
+  height: 350px;
+  width: 500px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer Section */
+.footer {
+  grid-area: footer;
+  background-color:white;
+}
+
+.redes-title {
+  background-color:white;
+  text-align: center;
+  padding: 14px;
+}

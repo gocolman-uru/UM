@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inicio - Buscador de Libros</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Inicio</a></li>
+            <li><a href="{{ url_for('search') }}">Buscar Libros</a></li>
+            {% if current_user.is_authenticated %}
+            <li><a href="{{ url_for('logout') }}">Cerrar Sesión</a></li>
+            {% else %}
+            <li><a href="{{ url_for('login') }}">Iniciar Sesión</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>Bienvenido a Buscador de Libros</h1>
+        <p>Esta aplicación te permite buscar libros en nuestra base de datos y en la web.</p>
+        {% if current_user.is_authenticated %}
+        <p>Usuario autenticado: {{ current_user.id }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
+Este código define la estructura básica de la página HTML, incluye un enlace al archivo CSS de estilo y muestra un menú de navegación que cambia según si el usuario está autenticado o no. El contenido principal de la página se encuentra dentro de un contenedor con la clase content, que puedes personalizar según tus necesidades.
+
+Recuerda que este código es solo un ejemplo y que deberás personalizarlo para adaptarlo a tus necesidades específicas de la aplicación.
+
+
+
+
+
+

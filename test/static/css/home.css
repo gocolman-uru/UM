@@ -1,0 +1,120 @@
+/* Home CSS (Pagina Principal) */
+
+/* Header Section */
+.header {
+  background-color: white;
+  padding: 25px;
+  position: sticky;
+  width: 100%;
+}
+
+.header-title {
+  text-align: center;
+}
+
+.header-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Hero Section (Main Section) */
+.hero {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px;
+  grid-area: hero;
+}
+
+.hero-text {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.hero-reason {
+  font-size: 1.25rem;
+}
+
+.topnav{
+  padding:30px;
+}
+/* 1st Section (Trabajo) */
+.trabajo {
+  grid-area:trabajo;
+}
+
+.trabajo-title {
+  background-color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.contenedor-trabajo {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+}
+
+.explicacion-trabajo {
+  background-color: white;
+  border: black solid 3px;
+  border-radius: 20px;
+  width: 1000px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items:center;
+}
+
+/* 2nd Section (Donde Trabajamos) */
+.trabajamos-title {
+  background-color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.trabajamos-contenedor {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.explicacion-trabajamos {
+  background-color: white;
+  border: black solid 2px;
+  border-radius: 20px;
+  width: 500px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.taller-img {
+  width: 450px;
+  height: 200px;
+}
+
+/* Footer Section */
+.footer {
+  grid-area: footer;
+  background-color:white;
+}
+
+.redes-title {
+  background-color:white;
+  text-align: center;
+  padding: 14px;
+}
