@@ -1,0 +1,10 @@
+Cosas para hacer:
+
+- Calendario con las fechas de entrega
+- Plazos y enumerar las etapas que requieren llegar al producto final (entregas intermedias)
+- Dividir las tareas
+
+
+- Generar documentos y requerimientos basicos que queremos que tenga la aplicacion
+- Benchmarck de codigos para generar una pagina web con flask y vincularnos a un portal
+- Benchmarck para tener la info de como vincular una base de datos digital con consultas del usuario dentro de la pagina
