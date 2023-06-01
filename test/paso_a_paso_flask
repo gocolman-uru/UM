@@ -1,6 +1,10 @@
 - Link: https://j2logo.com/leccion-1-la-primera-aplicacion-flask/
 
 
+Primero entrar a la carpeta "test" ----- cd test
+- Comprobar con ls para ver si estoy adentro, luego:
+
+0 - si no lo tengo, iniciar el ambiente de entorno virtualenv env
 1 - source env/bin/activate  # Para activar el entorno virtual de la carpeta
 2 - export FLASK_APP="app.py" # Para asignarle la variable de entorno
 3 - flask run # Correr la app
