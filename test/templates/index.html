@@ -55,47 +55,59 @@
             </div>
         </section>
 
-        <section class="trabajo">
-            <h2 class="trabajo-title">Libros mas vistos:</h2>
-            <div class="contenedor-trabajo">
-                <article class="explicacion-trabajo">
-                    <li><p>Biologia para Dummies (Rene Fester Kratz y Donna Rae Siegfried)</p></li>
-                    <li><p>Genoma: La autobiografia de una especie en 23 capitulos (Matt Ridley)</p></li>
-                    <li><p>"Breve historia de la quimica" (Isaac Asimov)</p></li>
-                    <li><p>"La cuchara menguante" (Sam Kean)</p></li>
-                    <li><p>"Tratado elemental de la quimica" (Antoine Lavoisier)</p></li>
-                    <li><p>Fisica Basica (Jose Ricardo Luna Victoria Muñoz)</p></li>
-                    <li><p>Concepto y Magnitudes en Fisica (L.Laroze, N.Porras y G.Fuster)</p></li>
-                    <li><p>Psicologicamente Hablando (Adrian Triglia, Bertrand Regader y Jonathan Garcia-Allen)</p></li>
-                    <li><p>La sorprendente verdad sobre que nos motiva (Daniel Pink)</p></li>
-                    <li><p>Despertar del corazon: El arte de quererse bien (Sandra Garcia Sanchez-Beato)</p></li>
+        <section class="libros-vistos">
+            <h2 class="libros-title">Libros mas vistos:</h2>
+            <div class="contenedor-libros">
+                <article>
+                    <ul class="lista-libros">
+                        <li><p>Biologia para Dummies (Rene Fester Kratz y Donna Rae Siegfried)</p></li>
+                        <li><p>Genoma: La autobiografia de una especie en 23 capitulos (Matt Ridley)</p></li>
+                        <li><p>"Breve historia de la quimica" (Isaac Asimov)</p></li>
+                        <li><p>"La cuchara menguante" (Sam Kean)</p></li>
+                        <li><p>"Tratado elemental de la quimica" (Antoine Lavoisier)</p></li>
+                        <li><p>Fisica Basica (Jose Ricardo Luna Victoria Muñoz)</p></li>
+                        <li><p>Concepto y Magnitudes en Fisica (L.Laroze, N.Porras y G.Fuster)</p></li>
+                        <li><p>Psicologicamente Hablando (Adrian Triglia, Bertrand Regader y Jonathan Garcia-Allen)</p></li>
+                        <li><p>La sorprendente verdad sobre que nos motiva (Daniel Pink)</p></li>
+                        <li><p>Despertar del corazon: El arte de quererse bien (Sandra Garcia Sanchez-Beato)</p></li>
+                    </ul>
                 </article>
             </div>
         </section>
 
-        <section class="donde-trabajamos">
-            <h2 class="trabajamos-title">Categoria de Libros:</h2>
-            <div class="trabajamos-contenedor">
-                <article class="explicacion-trabajamos">
-                    <li><p>Matematica 1</p></li>
-                    <li><p>Matematica 2</p></li>
-                    <li><p>Matematica 3</p></li>
-                    <li><p>Algebra Lineal</p></li>
-                    <li><p>Introduccion a la Licenciatura</p></li>
-                    <li><p>Pensamiento Computacional</p></li>
-                    <li><p>Programacion 1</p></li>
-                    <li><p>Programacion 2</p></li>
-                    <li><p>Diseño de base de datos</p></li>
-                    <li><p>Diseño UX/UI</p></li>
-                    <li><p>Y muchos mas...</p></li>
+        <section class="categorias-libros">
+            <h2 class="categoria-title">Categoria de Libros:</h2>
+            <div class="categoria-contenedor">
+                <article>
+                    <ul class="categoria-libros">
+                        <li><p>Matematica 1</p></li>
+                        <li><p>Matematica 2</p></li>
+                        <li><p>Matematica 3</p></li>
+                        <li><p>Algebra Lineal</p></li>
+                        <li><p>Introduccion a la Licenciatura</p></li>
+                        <li><p>Pensamiento Computacional</p></li>
+                        <li><p>Programacion 1</p></li>
+                        <li><p>Programacion 2</p></li>
+                        <li><p>Diseño de base de datos</p></li>
+                        <li><p>Diseño UX/UI</p></li>
+                        <li><p>Y muchos mas...</p></li>
+                    </ul>
                 </article>
             </div>
         </section>
     </main>
 
-    <!-- Terminar Footer -->
 <footer class="footer">
-    <h3 class="redes-title">Nuestras Redes</h3>
+    <div>
+        <h3 class="footer-title">Links UM</h3>
+        <img src="{{ url_for('static', filename='assets/img/ApUMtes.jpg') }}" alt="logo biblioteca" class="footer-image">
+    </div>
+    <nav>
+        <ul class="footer-nav">
+            <li><a href="https://cas.um.edu.uy/cas/login?service=https://www3.um.edu.uy/alumnos/default.asp&paginaactual=https://www3.um.edu.uy/alumnos/default.asp" class="hover">Login UM</a></li>
+            <li><a href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&ct=1685657633&rver=7.0.6737.0&wp=MBI_SSL&wreply=https%3a%2f%2foutlook.live.com%2fowa%2f0%2f%3fnlp%3d1%26state%3d1%26redirectTo%3daHR0cHM6Ly9vdXRsb29rLmxpdmUuY29tL21haWwvMC8%26RpsCsrfState%3d6c9f1cc9-527a-a7fb-9c8d-14719744e06d&id=292841&aadredir=1&CBCXT=out&lw=1&fl=dob%2cflname%2cwld&cobrandid=90015" class="hover">Mail UM</a></li>
+        </ul>
+    </nav> 
 </footer>
 
 </body>

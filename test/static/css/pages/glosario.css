@@ -2,7 +2,7 @@
 
 /* Header Section */
 .header {
-  background-color: papayawhip;
+  background-color:white;
   padding: 25px;
   position: sticky;
   width: 100%;
@@ -25,10 +25,10 @@
 }
 
 /* 1,2 y 3ra Sections */
-.background-ubicacion {
+.background-glosario {
   padding: 30px;
   height: 60%;
-  background-color: papayawhip;
+  background-color:white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,18 +36,39 @@
   border: solid black 1px;
 }
 
-.text-ubicacion {
+.text-glosario {
   text-align: center;
+  padding: 10px;
+  font-size: 1.25rem;
 }
 
+
+
 /* Footer Section */
-.footer {
-  grid-area: footer;
-  background-color:white;
+.footer{
+  background-color: white;
+  padding: 25px;
+  width: 100%;
 }
 
 .redes-title {
   background-color:white;
   text-align: center;
   padding: 14px;
+}
+
+.footer-title {
+  text-align: center;
+}
+
+.footer-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }

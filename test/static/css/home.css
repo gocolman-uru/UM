@@ -35,8 +35,10 @@
 }
 
 .hero-text {
+  padding: 25px;
   text-align: center;
   font-size: 2rem;
+  border: solid black 1px;
 }
 
 .hero-reason {
@@ -46,29 +48,31 @@
 .topnav{
   padding:30px;
 }
-/* 1st Section (Trabajo) */
-.trabajo {
+
+/* 1st Section (Libros Mas Vistos) */
+.libros-vistos {
   grid-area:trabajo;
 }
 
-.trabajo-title {
+.libros-title {
   background-color: white;
   text-align: center;
   padding: 15px;
 }
 
-.contenedor-trabajo {
+.contenedor-libros {
   padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;   
 }
 
-.explicacion-trabajo {
+.lista-libros {
   background-color: white;
   border: black solid 3px;
   border-radius: 20px;
   width: 1000px;
+  font-size: 1.5rem;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -76,45 +80,58 @@
   align-items:center;
 }
 
-/* 2nd Section (Donde Trabajamos) */
-.trabajamos-title {
+/* 2nd Section (Categoria de Libros) */
+.categoria-title {
   background-color: white;
   text-align: center;
   padding: 15px;
 }
 
-.trabajamos-contenedor {
+.categoria-contenedor {
   padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.explicacion-trabajamos {
+.categoria-libros {
   background-color: white;
   border: black solid 2px;
   border-radius: 20px;
   width: 500px;
   padding: 20px;
+  font-size: 1.75rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
-.taller-img {
-  width: 450px;
-  height: 200px;
-}
-
 /* Footer Section */
-.footer {
-  grid-area: footer;
-  background-color:white;
+.footer{
+  background-color: white;
+  padding: 25px;
+  width: 100%;
 }
 
 .redes-title {
   background-color:white;
   text-align: center;
   padding: 14px;
+}
+
+.footer-title {
+  text-align: center;
+}
+
+.footer-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
