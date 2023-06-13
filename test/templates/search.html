@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/search.css') }}">
+    <title>Búsqueda</title>
+  </head>
+  
+  <body>
+    <header class="header">
+      <div>
+        <img src="{{ url_for('static', filename='assets/img/ApUMtes.jpg') }}" alt="logo taller" class="header-image">
+      </div>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="{{ url_for('static', filename='materias.html') }}" class="hover">Tus materias</a></li>
+          <li><a href="{{ url_for('static', filename='apuntes.html') }}" class="hover">Scanea tus apuntes</a></li>
+          <li><a href="{{ url_for('static', filename='glosario.html') }}" class="hover">Glosario con guia</a></li>
+          <li><a href="{{ url_for('logout') }}" class="hover">Logout</a></li> <!-- Botón de logout -->
+        </ul>
+      </nav>
+    </header>
+
+
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Resultado</h1>
+
+                <h2>Libro(s) disponible(s): {{ query }}</h2>
+            
+                <ul>
+                    {% for result in results %}
+                        <li><a href="{{ result[0][1] }}">{{ result[0][0] }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </section>
+    </main>
+
+
+
+<footer class="footer">
+    <div>
+        <h3 class="footer-title">Links UM</h3>
+        <img src="{{ url_for('static', filename='assets/img/ApUMtes.jpg') }}" alt="logo biblioteca" class="footer-image">
+    </div>
+    <nav>
+        <ul class="footer-nav">
+            <li><a href="https://cas.um.edu.uy/cas/login?service=https://www3.um.edu.uy/alumnos/default.asp&paginaactual=https://www3.um.edu.uy/alumnos/default.asp" class="hover">Login UM</a></li>
+            <li><a href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&ct=1685657633&rver=7.0.6737.0&wp=MBI_SSL&wreply=https%3a%2f%2foutlook.live.com%2fowa%2f0%2f%3fnlp%3d1%26state%3d1%26redirectTo%3daHR0cHM6Ly9vdXRsb29rLmxpdmUuY29tL21haWwvMC8%26RpsCsrfState%3d6c9f1cc9-527a-a7fb-9c8d-14719744e06d&id=292841&aadredir=1&CBCXT=out&lw=1&fl=dob%2cflname%2cwld&cobrandid=90015" class="hover">Mail UM</a></li>
+        </ul>
+    </nav> 
+</footer>
+
+</body>
+
+
+
+</html>
