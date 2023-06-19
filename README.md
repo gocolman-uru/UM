@@ -39,6 +39,7 @@ Esta es una aplicación diseñada para mejorar el acceso a la información bibli
     a. # Windows ---> `cd src`
     b. # MacOS ---> `cd src`
     c. # Linux ---> `cd src`
+    
 2. Inicia el ambiente de entorno: `virtualenv env`
 
 
