@@ -26,6 +26,7 @@ Esta es una aplicación diseñada para mejorar el acceso a la información bibli
 - Sistema operativo: [especificar los sistemas operativos compatibles]
 - Navegador web: [especificar los navegadores web compatibles]
 - Conexión a Internet
+- Descargar el archivo "[imagen_a_subir.jpeg](https://github.com/gocolman-uru/UM/blob/obligatorio_pens_computacional/imagen_a_subir.jpeg)"
 .
 .
 .
@@ -34,9 +35,10 @@ Esta es una aplicación diseñada para mejorar el acceso a la información bibli
 
 
 # Guía de instalación
-1. Descarga el archivo de instalación desde [enlace de descarga].
-2. Ejecuta el archivo de instalación y sigue las instrucciones en pantalla.
-3. Una vez completada la instalación, abre el navegador web recomendado.
-4. Accede a la aplicación ingresando la URL [URL de la aplicación].
+1. Una vez en el directorio de la carpeta donde se aloja la aplicación, ingresa a la carpeta "src".
+    a. # Windows ---> `cd src`
+    b. # MacOS ---> `cd src`
+    c. # Linux ---> `cd src`
+2. Inicia el ambiente de entorno: `virtualenv env`
 
 
