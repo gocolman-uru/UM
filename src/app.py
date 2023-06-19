@@ -107,9 +107,9 @@ def upload():
     text = pytesseract.image_to_string(image)
     palabras = text.split()
     # cargo el modelo
-    loaded_model = joblib.load('modelo_lg.pkl')
+    loaded_model = joblib.load('objects/modelo_lg.pkl')
     # cargo el vect
-    vectorizer = joblib.load('vectorizador.pkl')
+    vectorizer = joblib.load('objects/vectorizador.pkl')
     #prediction = loaded_model.predict([text])[0]
 
     preds_dict = {}
