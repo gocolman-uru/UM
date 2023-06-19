@@ -5,6 +5,16 @@ import requests
 from flask_wtf.csrf import CSRFProtect
 import csv
 
+import pytesseract
+from PIL import Image
+import joblib
+import pandas as pd
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score
+
+
 
 
 
@@ -87,15 +97,41 @@ def search():
 
 
 
+@app.route('/upload', methods=['POST'])
+def upload():
+    file = request.files['file']
+    file.save('uploads/' + file.filename)
+
+    # imagen a texto ocr - tesseract
+    image = Image.open('uploads/' + file.filename)
+    text = pytesseract.image_to_string(image)
+    palabras = text.split()
+    # cargo el modelo
+    loaded_model = joblib.load('modelo_lg.pkl')
+    # cargo el vect
+    vectorizer = joblib.load('vectorizador.pkl')
+    #prediction = loaded_model.predict([text])[0]
+
+    preds_dict = {}
+
+    for palabra in palabras:
+        text_vectorized = vectorizer.transform([palabra])
+        prediction = loaded_model.predict(text_vectorized)[0]
+        preds_dict[palabra] = prediction
 
 
+    df = pd.read_csv('2_machine_learning/bases/df_predicciones.csv',sep='|')
 
+    libros_lista = []
+    for valor in preds_dict.values():
+        libros = df.loc[df['Tema'] == valor]['Texto'].values
+        libros_lista.append(libros)
 
+    lista_final = []
+    for i in libros_lista:
+        for u in i:
+            lista_final.append(u)
 
-
-
-
-
-
+    return render_template("recomendaciones.html", uploaded=True, text=text, lista_final=lista_final,palabras=palabras)
 
 

@@ -58,6 +58,7 @@
 </head>
 <body>
     <div class="container">
+        <img src="{{ url_for('static', filename='assets/img/ApUMtes.jpg') }}" alt="logo biblioteca" class="header-login-image">
         <h1>Login</h1>
         {% with messages = get_flashed_messages() %}
             {% if messages %}

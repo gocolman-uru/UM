@@ -31,8 +31,11 @@
             <div>
                 <h2 class="title-apuntes">Scanea tus Apuntes</h2>
                 <article>
-                    <p class="text-apuntes">Aca subi tu foto en la pagina, donde acto seguido te recomendaremos libros disponibles que dependen de los temas que estes estudiando.</p>
-                    <center><input type="file" class="file-loader"> </center>
+                    <p class="text-apuntes">Aca subí tu foto en la pagina, donde acto seguido te recomendaremos libros disponibles que dependen de los temas que estes estudiando.</p>
+                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                        <input type="file" name="file">
+                        <input type="submit" value="Cargar imagen">
+                    </form>
                 </article>
             </div>
         </section>
@@ -41,7 +44,7 @@
 <footer class="footer">
     <div>    
         <h3 class="footer-title">Links UM</h3>
-        <img src="img/ApUMtes.jpg" alt="logo biblioteca" class="footer-image">
+        <img src="assets/img/ApUMtes.jpg" alt="logo biblioteca" class="footer-image">
     </div>
     <nav>
         <ul class="footer-nav">

@@ -59,7 +59,7 @@ body {
   .hero-text {
     padding: 25px;
     text-align: center;
-    font-size: 2rem;
+    font-size: 18px;
     border: solid black 1px;
   }
   
@@ -71,63 +71,7 @@ body {
     padding:30px;
   }
   
-  /* 1st Section (Libros Mas Vistos) */
-  .libros-vistos {
-    grid-area:trabajo;
-  }
-  
-  .libros-title {
-    background-color: white;
-    text-align: center;
-    padding: 15px;
-  }
-  
-  .contenedor-libros {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;   
-  }
-  
-  .lista-libros {
-    background-color: white;
-    border: black solid 3px;
-    border-radius: 20px;
-    width: 1000px;
-    font-size: 1.5rem;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-between;
-    align-items:center;
-  }
-  
-  /* 2nd Section (Categoria de Libros) */
-  .categoria-title {
-    background-color: white;
-    text-align: center;
-    padding: 15px;
-  }
-  
-  .categoria-contenedor {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .categoria-libros {
-    background-color: white;
-    border: black solid 2px;
-    border-radius: 20px;
-    width: 500px;
-    padding: 20px;
-    font-size: 1.75rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
+
   
   /* Footer Section */
   .footer{
