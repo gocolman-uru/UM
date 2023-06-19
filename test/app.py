@@ -132,6 +132,8 @@ def upload():
         for u in i:
             lista_final.append(u)
 
+            # test 
+
     return render_template("recomendaciones.html", uploaded=True, text=text, lista_final=lista_final,palabras=palabras)
 
 
